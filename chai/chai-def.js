@@ -2,7 +2,6 @@ var jsdom = require("jsdom");
 var fs = require("fs");
 var _ = require("underscore");
 var jquery = fs.readFileSync("../lib/jquery/jquery.js");
-var sleep = require("sleep");
 
 
 function name($, section) {
