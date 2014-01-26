@@ -1,0 +1,23 @@
+{
+  "name": "defs",
+  "version": "0.0.0",
+  "description": "Scrape websites and generate tern-defs",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datamadsen/tern-defs.git"
+  },
+  "dependencies": {
+      "jsdom": "0.8.11",
+      "underscore": "1.5.2"
+  },
+  "author": "Tim M. Madsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datamadsen/tern-defs/issues"
+  },
+  "homepage": "https://github.com/datamadsen/tern-defs"
+}
