@@ -1,0 +1,15 @@
+{
+    "libs": [
+        "jquery",
+        "underscore",
+        "chai"
+    ],
+    "loadEagerly": [ ],
+    "plugins": { 
+        "requirejs": {
+           "baseURL": "./js",
+           "paths": { }
+        },
+        "node": {}
+    }
+}
