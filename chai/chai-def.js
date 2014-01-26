@@ -20,12 +20,13 @@ function type($, section) {
     // The signature indicates optional parameters with square brackets. For
     // instance: foo(bar, [x], [y]) indicates that x and y is optional. The
     // loop below pushes the indices of optional parameters to an array by
-    // examining the parameters after '(' (if there isn't anything after '(',
-    // we examine the empty string).
-    _(signature.split("(")[1] || "".split(",")).each(function(name, index) {
-        if(name.toString().indexOf("[") != -1)
-            optParamIndices.push(index);
-    });
+    // examining the parameters after '('.
+    var params = signature.split("(")[1];
+    if(params) 
+        _(params.split(",")).each(function(param, index) {
+            if(param.toString().indexOf("[") != -1)
+                optParamIndices.push(index);
+        });
     
     var parameters = [];
     $(section).find("ul.tags li.tag").each(function(index) {
