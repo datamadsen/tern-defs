@@ -26,3 +26,9 @@ placed in the `node_modules/tern/defs/` library and be included in a
     "plugins": {}
 }
 ```
+
+Run it like this:
+
+```sh
+node chai/chai-def.js
+```
