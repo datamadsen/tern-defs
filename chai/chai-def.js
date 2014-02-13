@@ -122,9 +122,11 @@ function allDocsAreReady() {
     var terndef = {
         "!name": libName 
     };
+
+    terndef[libName] = {};
     
     for(var r in results) 
-        terndef[r] = results[r];
+        terndef[libName][r] = results[r];
 
     console.log(JSON.stringify(terndef, null, "\t"));
 }
@@ -132,6 +134,7 @@ function allDocsAreReady() {
 var libName = "chai";
 var modules = {
     "expect": "http://chaijs.com/api/bdd",
+    "should": "http://chaijs.com/api/bdd",
     "assert": "http://chaijs.com/api/assert"
 };
 
